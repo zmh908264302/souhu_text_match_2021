@@ -1,6 +1,5 @@
 #! -*- coding: utf-8 -*-
-# 2021搜狐校园文本匹配算法大赛baseline
-# 直接用 RoFormer + Cond LayerNorm 融合为一个模型
+# 2021搜狐校园文本匹配算法大赛
 
 import os
 from datetime import datetime

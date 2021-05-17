@@ -12,21 +12,20 @@ echo "==============================================="
 
 export BERT_MODEL="/mnt/model/pt/chinese_roformer_base"
 export DATA_DIR="data/clean/round3/${i}/"
-#export DATA_DIR="data/clean/tmp/k_fold/k_fold${i}/"
 export OUTPUT_DIR="output/round3/${i}/"
 export NUM_EPOCHS=3
 export TRAIN_BATCH_SIZE=8
 export EVAL_BATCH_SIZE=8
 export LEARNING_RATE=2e-5
 export SEED=42
-
 if [ ${i} != "ssa" ] || [ ${i} != "ssb" ]
 then
     EVAL_STEP=400
 else
     EVAL_STEP=1200
-   if
+fi
 export EVAL_STEP
+
 
 export MAX_SEQ_LENGTH=256
 
